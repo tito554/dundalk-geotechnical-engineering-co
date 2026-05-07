@@ -1,0 +1,51 @@
+# Geotechnical Engineering — Dundalk
+
+> Geotechnical engineering services in Dundalk, Ireland.
+
+## Services
+- [Anchors](https://dundalk.geotechnical-engineering.co/anchors/)
+- [Atterberg Limits](https://dundalk.geotechnical-engineering.co/atterberg-limits/)
+- [Cbr Road](https://dundalk.geotechnical-engineering.co/cbr-road/)
+- [Cpt Test](https://dundalk.geotechnical-engineering.co/cpt-test/)
+- [Deep Excavations](https://dundalk.geotechnical-engineering.co/deep-excavations/)
+- [Excavation Monitoring](https://dundalk.geotechnical-engineering.co/excavation-monitoring/)
+- [Excavations](https://dundalk.geotechnical-engineering.co/excavations/)
+- [Flexible Pavement](https://dundalk.geotechnical-engineering.co/flexible-pavement/)
+- [Footings](https://dundalk.geotechnical-engineering.co/footings/)
+- [Foundations](https://dundalk.geotechnical-engineering.co/foundations/)
+- [Grain Size](https://dundalk.geotechnical-engineering.co/grain-size/)
+- [Ground Improvement](https://dundalk.geotechnical-engineering.co/ground-improvement/)
+- [Grouting](https://dundalk.geotechnical-engineering.co/grouting/)
+- [In Situ Permeability](https://dundalk.geotechnical-engineering.co/in-situ-permeability/)
+- [Investigation](https://dundalk.geotechnical-engineering.co/investigation/)
+- [Lab In Situ](https://dundalk.geotechnical-engineering.co/lab-in-situ/)
+- [Laboratory](https://dundalk.geotechnical-engineering.co/laboratory/)
+- [Liquefaction](https://dundalk.geotechnical-engineering.co/liquefaction/)
+- [Masw](https://dundalk.geotechnical-engineering.co/masw/)
+- [Mat Foundations](https://dundalk.geotechnical-engineering.co/mat-foundations/)
+- [Piles](https://dundalk.geotechnical-engineering.co/piles/)
+- [Proctor Tests](https://dundalk.geotechnical-engineering.co/proctor-tests/)
+- [Resistivity](https://dundalk.geotechnical-engineering.co/resistivity/)
+- [Retaining Walls](https://dundalk.geotechnical-engineering.co/retaining-walls/)
+- [Rigid Pavement](https://dundalk.geotechnical-engineering.co/rigid-pavement/)
+- [Road Geotechnics](https://dundalk.geotechnical-engineering.co/road-geotechnics/)
+- [Sand Cone Density](https://dundalk.geotechnical-engineering.co/sand-cone-density/)
+- [Seismic](https://dundalk.geotechnical-engineering.co/seismic/)
+- [Seismic Isolation](https://dundalk.geotechnical-engineering.co/seismic-isolation/)
+- [Seismic Microzonation](https://dundalk.geotechnical-engineering.co/seismic-microzonation/)
+- [Seismic Refraction](https://dundalk.geotechnical-engineering.co/seismic-refraction/)
+- [Slope Stability](https://dundalk.geotechnical-engineering.co/slope-stability/)
+- [Slopes](https://dundalk.geotechnical-engineering.co/slopes/)
+- [Soft Ground Tunnels](https://dundalk.geotechnical-engineering.co/soft-ground-tunnels/)
+- [Spt Drilling](https://dundalk.geotechnical-engineering.co/spt-drilling/)
+- [Stone Columns](https://dundalk.geotechnical-engineering.co/stone-columns/)
+- [Test Pits](https://dundalk.geotechnical-engineering.co/test-pits/)
+- [Triaxial](https://dundalk.geotechnical-engineering.co/triaxial/)
+- [Vibrocompaction](https://dundalk.geotechnical-engineering.co/vibrocompaction/)
+
+## Contact
+- Website: https://dundalk.geotechnical-engineering.co/
+
+## About
+This site provides geotechnical engineering services in Dundalk, Ireland.
+Compliant with local and international standards (ASTM, ISO, country-specific norms).

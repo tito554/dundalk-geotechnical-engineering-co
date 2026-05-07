@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><link rel="icon" type="image/svg+xml" href="/img/favicon.svg"><link rel="apple-touch-icon" href="/img/favicon.svg">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Seismic Microzonation in Dundalk: Site-Specific Ground Response for Safer Construction</title>
+<meta name="description" content="Engineering-led seismic microzonation for Dundalk projects. We map site amplification, Vs30 profiles,">
+<link rel="canonical" href="https://dundalk.geotechnical-engineering.co/seismic-microzonation/">
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Seismic Microzonation in Dundalk: Site-Specific Ground Response for Safer Construction">
+<meta property="og:description" content="Engineering-led seismic microzonation for Dundalk projects. We map site amplification, Vs30 profiles, and liquefaction susceptibility under Irish building...">
+<meta property="og:url" content="https://dundalk.geotechnical-engineering.co/seismic-microzonation/">
+<meta property="og:site_name" content="Geotechnical Engineering">
+<meta property="og:image" content="https://dundalk.geotechnical-engineering.co/img/microzonificacion-sismica-5.webp">
+<meta property="og:locale" content="en_IE">
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Seismic Microzonation in Dundalk: Site-Specific Ground Response for Safer Construction">
+<meta name="twitter:description" content="Engineering-led seismic microzonation for Dundalk projects. We map site amplification, Vs30 profiles, and liquefaction susceptibility under Irish building...">
+<script type="application/ld+json">{"@context":"https://schema.org","itemListElement":[{"item":"/","name":"Home","@type":"ListItem","position":1},{"name":"Seismic Microzonation in Dundalk: Site-Specific Ground Response for Safer Construction","@type":"ListItem","position":2}],"@type":"BreadcrumbList"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","description":"Engineering-led seismic microzonation for Dundalk projects. We map site amplification, Vs30 profiles, and liquefaction susceptibility under Irish building regulations for low-to-moderate seismici","url":"https://dundalk.geotechnical-engineering.co/seismic-microzonation","provider":{"address":{"addressLocality":"Dundalk","addressCountry":"IE","@type":"PostalAddress"},"telephone":"","name":"Geotechnical Engineering","email":"contact@geotechnical-engineering.co","@type":"LocalBusiness"},"areaServed":{"name":"Dundalk","@type":"City"},"@type":"Service","name":"Seismic Microzonation in Dundalk: Site-Specific Ground Response for Safer Construction"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"name":"How much does a seismic microzonation study cost for a typical Dundalk commercial site?","@type":"Question","acceptedAnswer":{"@type":"Answer","text":"For a Dundalk site up to about one hectare with a reasonable borehole and MASW grid, the study typically ranges from €3,540 to €14,390. The spread depends on whether we need additional CPT soundings, downhole seismic verification, or 2D basin modeling. We scope the geophysics tightly to the structural engineer’s required spectra so you are not paying for resolution you will not use."}},{"name":"Is seismic microzonation really necessary in Ireland given the low seismicity?","@type":"Question","acceptedAnswer":{"@type":"Answer","text":"Yes, and Dundalk is a good example of why. The Irish National Annex to Eurocode 8 requires site-specific assessment when ground conditions suggest Site Class D, E, or S1 soils. Much of central Dundalk, especially near the quays and river corridors, falls into these categories. A low seismic hazard combined with high site amplification can produce design forces comparable to a moderate-hazard rock site. The cost of the microzonation is a fraction of the structural overdesign you would otherwise carry."}},{"name":"What borehole data do you need to run the site response analysis?","@type":"Question","acceptedAnswer":{"@type":"Answer","text":"We need SPT N-values at 1.5-meter intervals, unit weight and moisture content from undisturbed samples, and Atterberg limits and grain size curves for the cohesive and granular strata respectively. For Dundalk’s soft clays, we also run resonant column or triaxial tests to measure small-strain shear modulus (Gmax) directly. The combination of field Vs profiles and lab-measured nonlinear curves gives us the most defensible amplification factors."}},{"name":"How do you account for the glacial till variability across Dundalk in the microzonation model?","@type":"Question","acceptedAnswer":{"@type":"Answer","text":"We treat the till as a stiff, preconsolidated layer with a Vs typically between 350 and 600 m/s in Dundalk, depending on the degree of overconsolidation and boulder content. Where the till pinches out or thickens, we interpolate its depth from seismic refraction and borehole control. The impedance contrast at the till-bedrock interface is explicitly modeled in the 1D analysis, and we run sensitivity cases to bound the uncertainty in till thickness before finalizing the microzone boundaries."}},{"name":"What deliverables do we get at the end of a microzonation study?","@type":"Question","acceptedAnswer":{"@type":"Answer","text":"You receive a georeferenced microzone map with site class boundaries, a geotechnical interpretive report with the ground response methodology, design response spectra and acceleration time histories for each zone, and a liquefaction potential index map if saturated granular soils are present. All spectra are compatible with IS EN 1998-1 and ready for direct input into structural analysis software."}}]}</script>
+<style>
+
+@media (max-width: 900px) {
+    .sidebar { display: none; }
+/* FIX 2026-04-18: selectores sin 'nav' para coincidir con el HTML real generado */
+.sidebar { padding: .5rem 0; }
+summary::-webkit-details-marker { display: none; }
+.sidebar .cat-name:hover { color: #c9a961; }
+.cta .contacto-line { font-size: 1rem; margin: .5rem 0; }
+.sidebar .cat-name { color: inherit; text-decoration: none; flex: 1; }
+
+footer { text-align: center; padding: 2rem; font-size: .8rem; color: #94a3b8; background: var(--dark); color: rgba(255,255,255,0.7); }
+.sidebar .home {
+    display: block; padding: .65rem 1rem; color: rgba(255,255,255,0.9);
+    font-size: .85rem; font-weight: 600;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    text-decoration: none;
+}
+.sidebar {
+    width: 240px; background: var(--dark); color: white; flex-shrink: 0;
+    border-radius: 10px; position: sticky; top: 1rem; overflow: hidden;
+    max-height: calc(100vh - 2rem); overflow-y: auto;
+}
+header h1 { font-size: clamp(1.5rem, 3vw, 2.2rem); line-height: 1.3; color: white; font-weight: 700; }
+.cta .whatsapp-btn:hover { background: #1eb853; }
+.sidebar .cat-arrow { display: inline-block; transition: transform .2s; }
+th { background: var(--dark); color: white; font-weight: 600; font-family: var(--font-h); font-size: .85rem; text-transform: uppercase; letter-spacing: .05em; }
+.cta h3 { font-size: 1.3rem; font-weight: 700; margin-bottom: 1.25rem; color: white; border: none; padding: 0; }
+summary:hover { background: rgba(0,0,0,0.02); }
+summary::before { content: '+ '; color: var(--primary); font-weight: 700; }
+
+.cta { background: var(--dark); color: white; padding: 2rem; border-radius: 10px; margin: 2rem 0; text-align: center; }
+.cta .contacto-line a { color: white; text-decoration: underline; }
+
+.content-area { display: flex; gap: 1.5rem; align-items: flex-start; }
+.servicios-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+    .content-area { flex-direction: column; }
+.header-contact a { color: rgba(255,255,255,0.85); font-size: .9rem; }
+
+header { background: var(--dark); color: white; padding: 1.5rem 0 2rem; }
+    main { padding: 1.5rem; }
+.container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+details p { padding: .75rem 1.25rem; font-size: .9rem; color: #475569; margin: 0; }
+th, td { padding: .85rem 1rem; text-align: left; border-bottom: 1px solid #e2e8f0; }
+.cta .whatsapp-btn {
+    display: inline-block; background: #25D366; color: white;
+    padding: .75rem 1.75rem; border-radius: 8px; font-weight: 600;
+    margin-bottom: 1.25rem; font-size: 1rem;
+}
+a { color: var(--primary); text-decoration: none; }
+.sidebar .cat-row {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: .65rem 1rem; color: rgba(255,255,255,0.85); font-size: .85rem; font-weight: 500;
+    transition: background .15s;
+}
+body { font-family: var(--font-b); color: var(--text); background: var(--bg); line-height: 1.75; font-size: 15px; }
+* { margin:0; padding:0; box-sizing:border-box; }
+.servicio p { margin: 0; font-size: .9rem; color: #475569; }
+h1, h2, h3, h4 { font-family: var(--font-h); }
+:root {
+    --primary: #D97706;
+    --accent: #EA580C;
+    --dark: #171717;
+    --bg: #FAFAF9;
+    --text: #1C1917;
+    --font-h: 'Merriweather', 'Segoe UI', sans-serif;
+    --font-b: 'Source Sans Pro', 'Segoe UI', sans-serif;
+}
+.sidebar .cat-row:hover { background: rgba(255,255,255,0.08); }
+main { background: white; border-radius: 12px; padding: 2.5rem; box-shadow: 0 1px 3px rgba(0,0,0,.06); margin-bottom: 2rem; flex: 1; min-width: 0; }
+tr:nth-child(even) { background: #f8fafc; }
+main h3 { color: var(--dark); font-size: 1.05rem; margin: 1.5rem 0 .5rem; font-weight: 600; }
+.servicio h3 { margin: 0 0 .5rem; color: var(--dark); font-size: .95rem; }
+.servicio { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.25rem; transition: border-color .2s; }
+    .container { padding: 1rem; }
+.sidebar .cat-toggle[aria-expanded="true"] .cat-arrow { transform: rotate(180deg); display: inline-block; }
+.header-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; gap: 1rem; flex-wrap: wrap; }
+.sidebar nav .home:hover { background: rgba(255,255,255,0.08); }
+
+#mapa-ciudad { height: 240px; max-width: 630px; margin: 1.5rem auto; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,.1); }
+
+details { margin-bottom: .75rem; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; }
+.servicio:hover { border-color: var(--primary); }
+.sidebar .cat-toggle {
+    background: none; border: 0; color: inherit; cursor: pointer;
+    padding: .2rem .4rem; font-size: .65rem; transition: transform .2s;
+}
+.sidebar .cat-sub a {
+    display: block; padding: .4rem 1rem .4rem 1.75rem; color: rgba(255,255,255,0.7);
+    font-size: .78rem; transition: all .15s; text-decoration: none;
+    border-left: 2px solid transparent;
+}
+.sidebar .cat-sub a:hover { color: #c9a961; background: rgba(201,169,97,0.06); border-left-color: #c9a961; }
+summary { padding: 1rem 1.25rem; cursor: pointer; font-weight: 500; color: var(--dark); background: #f8fafc; list-style: none; }
+
+table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: .9rem; }
+.sidebar .cat-sub[hidden] { display: none; }
+    .header-top { flex-direction: column; text-align: center; }
+main section { margin-bottom: 1.5rem; }
+details[open] summary::before { content: '− '; }
+.cta .whatsapp-sub { font-size: .85rem; opacity: .85; margin-bottom: 1rem; }
+main p { margin-bottom: 1rem; color: #334155; }
+.header-contact a:hover { color: white; }
+main h2 { color: var(--dark); font-size: 1.35rem; margin: 2rem 0 1rem; padding-bottom: .5rem; border-bottom: 2px solid #e2e8f0; font-weight: 600; }
+footer a { color: rgba(255,255,255,0.85); }
+
+.normas { background: rgba(0,0,0,0.03); padding: 1rem 1.5rem; border-radius: 8px; border-left: 4px solid var(--primary); margin: 1.5rem 0; font-size: .9rem; }
+.sidebar .cat-sub {
+    background: rgba(0,0,0,0.15); display: flex; flex-direction: column;
+}
+/* Pattern moderno cat-name + cat-toggle (REGLA 30b) */
+.sidebar .cat-item { border-top: 1px solid rgba(255,255,255,0.04); }</style>
+<link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#1E3A8A"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"></head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="header-top">
+            <div>
+                <div style="display:inline-flex;align-items:center;gap:10px;"><svg viewBox="0 0 64 64" width="44" height="44" style="flex-shrink:0"><circle cx="32" cy="32" r="28" fill="#D97706"/><circle cx="32" cy="32" r="20" fill="#EA580C"/><circle cx="32" cy="32" r="10" fill="#D97706"/></svg><span style="font-family:'Merriweather',sans-serif;font-weight:800;color:#fafafa;letter-spacing:-0.02em;line-height:1;font-size:24px;">Dundalk</span></div>
+                <div style="color:rgba(255,255,255,0.65);font-size:.8rem;margin-top:.4rem">Dundalk, Ireland</div>
+            </div>
+            <div class="header-contact">
+                <a href="mailto:contact@geotechnical-engineering.co">contact@geotechnical-engineering.co</a>
+            </div>
+        </div>
+        <nav aria-label="breadcrumb" style="padding:.3rem 0;font-size:.78rem;color:rgba(255,255,255,0.75)"><ol style="list-style:none;display:flex;gap:.35rem;flex-wrap:wrap;padding:0;margin:0"><li><a href="/" style="color:inherit;text-decoration:none">Home</a></li><li>›</li><li>Seismic & Special</li><li>›</li><li aria-current="page" style="color:rgba(255,255,255,0.95)">Seismic Microzonation in Dundalk: Site-Specific Ground Respo…</li></ol></nav>
+        <h1>Seismic Microzonation in Dundalk: Site-Specific Ground Response for Safer Construction</h1>
+    </div>
+</header>
+
+<div class="container">
+    <div class="content-area">
+        <aside class="sidebar">
+            <nav><a href="index.html" class="home">Home</a><div class="cat-item" data-cat="investigation"><div class="cat-row"><a href="/investigation/" class="cat-name">Investigation</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Investigation"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/cpt-test/">CPT (Cone Penetration Test)</a></div></div><div class="cat-item" data-cat="lab-in-situ"><div class="cat-row"><a href="/lab-in-situ/" class="cat-name">In-Situ Testing</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir In-Situ Testing"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/sand-cone-density/">Field density test (sand cone method)</a></div></div><div class="cat-item" data-cat="laboratory"><div class="cat-row"><a href="/laboratory/" class="cat-name">Laboratory</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Laboratory"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/atterberg-limits/">Atterberg limits</a><a href="/grain-size/">Grain size analysis (sieve + hydrometer)</a></div></div><div class="cat-item" data-cat="foundations"><div class="cat-row"><a href="/foundations/" class="cat-name">Foundations</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Foundations"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/piles/">Pile foundation design</a></div></div><div class="cat-item" data-cat="slopes"><div class="cat-row"><a href="/slopes/" class="cat-name">Slopes & Walls</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Slopes & Walls"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/anchors/">Active/passive anchor design</a><a href="/retaining-walls/">Retaining wall design</a><a href="/slope-stability/">Slope stability analysis</a></div></div><div class="cat-item" data-cat="ground-improvement"><div class="cat-row"><a href="/ground-improvement/" class="cat-name">Ground improvement</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Ground improvement"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/stone-columns/">Stone column design</a><a href="/vibrocompaction/">Vibrocompaction design</a></div></div><div class="cat-item" data-cat="seismic"><div class="cat-row"><a href="/seismic/" class="cat-name">Seismic</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Seismic"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/seismic-isolation/">Base isolation seismic design</a><a href="/seismic-microzonation/">Seismic microzonation</a><a href="/liquefaction/">Soil liquefaction analysis</a></div></div><div class="cat-item" data-cat="road-geotechnics"><div class="cat-row"><a href="/road-geotechnics/" class="cat-name">Roadway</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Roadway"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/cbr-road/">CBR study for road design</a><a href="/flexible-pavement/">Flexible pavement design</a><a href="/rigid-pavement/">Rigid pavement design</a></div></div><div class="cat-item" data-cat="excavations"><div class="cat-row"><a href="/excavations/" class="cat-name">Underground Excavations</a><button class="cat-toggle" aria-expanded="false" aria-label="Expandir Underground Excavations"><span class="cat-arrow">▼</span></button></div><div class="cat-sub" hidden><a href="/soft-ground-tunnels/">Geotechnical analysis for soft soil tunnels</a><a href="/deep-excavations/">Geotechnical design of deep excavations</a><a href="/excavation-monitoring/">Geotechnical excavation monitoring</a></div></div></nav>
+        </aside>
+        <main>
+            <section><p>I remember a mixed-use development proposed near the Castletown River, right where the estuarine muds transition into glacial till. The structural designer had assumed a single peak ground acceleration for the entire site, but the <a data-interlink="1" href="/masw/">MASW</a> profiles we ran told a different story. A 50-meter shift in foundation position meant the difference between Site Class C and a borderline Site Class E under Eurocode 8. That is the reality of seismic microzonation in Dundalk—the town sits on a patchwork of Quaternary deposits, from the Carlingford limestone bedrock to soft alluvium along the river corridor. With Dundalk’s growing skyline and industrial parks near the M1, understanding how local geology amplifies or dampens ground motion is no longer optional. It is how we keep a 54.00°N locale, with its own seismic history tied to intraplate stress release, from being caught off guard. The National Annex to IS EN 1998-1:2005 gives us the framework, but the site-specific response is what actually governs the design spectrum Dundalk engineers should use.</p></section>
+
+            <blockquote style="border-left:4px solid #D97706;background:rgba(0,0,0,.03);padding:1rem 1.25rem;margin:1.5rem 0 1.5rem 1rem;font-style:italic;color:#333;font-size:1.05rem;line-height:1.55;border-radius:0 6px 6px 0">A single PGA value for a whole Dundalk site is a design assumption, not a design parameter. Microzonation replaces that assumption with measured stratigraphic reality.</blockquote>
+
+            
+
+            <section>
+                <h2>Service characteristics in Dundalk</h2>
+                <div>In Dundalk, we often see borehole logs that hit dense lodgement till at 6 meters and then, 200 meters away, 15 meters of soft lacustrine clay before refusal. This lateral variability kills any generic amplification factor. Our microzonation approach layers <a href="/seismic-refraction/">seismic refraction</a> to map bedrock depth with multichannel surface wave testing to capture the shear wave velocity of each distinct stratum. We do not just hand over a Vs30 map; we build a 1D equivalent-linear site response model using Darendeli’s modulus reduction curves calibrated to the fines content from our <a href="/grain-size/">grain size</a> and Atterberg lab work. Dundalk’s reclaimed quay areas require particular care—the fill often contains organic silts that degrade stiffness under cyclic loading. We run iterative ground response analyses to generate surface spectra that account for impedance contrasts at the till-bedrock interface. The output is a set of microzones, each with its own elastic response spectrum and soil factor S, ready for the structural engineer’s ETABS or SAP2000 model. For critical facilities, we can extend the analysis to 2D with explicit modeling of basin edge effects, which matter more than people assume in a low-seismicity setting like County Louth.</div>
+            </section>
+
+            <figure style="margin:2rem auto;text-align:center;max-width:60%"><img src="/img/microzonificacion-sismica-5.webp" alt="Seismic Microzonation in Dundalk: Site-Specific Ground Response for Safer Construction" width="600" height="300" loading="lazy" decoding="async" style="width:100%;max-height:160px;object-fit:cover;border-radius:8px"><figcaption style="font-size:.78rem;color:#64748b;margin-top:.4rem">Seismic Microzonation in Dundalk: Site-Specific Ground Response for Safer Construction</figcaption></figure>
+
+            <div style="max-width:700px;margin:1.5rem auto;border-left:4px solid #D97706;border-radius:6px;overflow:hidden;background:#FFF;box-shadow:0 1px 3px rgba(0,0,0,.05)"><table style="width:100%;border-collapse:collapse;font-size:.92rem"><thead><tr style="background:#D97706;color:#FFF"><th style="padding:.75rem 1rem;text-align:left;font-weight:600">Parameter</th><th style="padding:.75rem 1rem;text-align:left;font-weight:600">Typical value</th></tr></thead><tbody><tr style="background:#FAFAF7"><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE">Vs30 mapping resolution</td><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE;color:#222;font-weight:500">50 m × 50 m grid typical, refined to 25 m for critical structures</td></tr><tr style="background:#FFFFFF"><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE">Site classes covered</td><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE;color:#222;font-weight:500">IS EN 1998-1:2005 Classes B, C, D, E; evaluation of S1 and S2 where applicable</td></tr><tr style="background:#FAFAF7"><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE">Analysis method</td><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE;color:#222;font-weight:500">1D equivalent-linear (SHAKE-type) with frequency-independent Rayleigh damping; 2D spectral element where basin effects dominate</td></tr><tr style="background:#FFFFFF"><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE">Input motion selection</td><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE;color:#222;font-weight:500">Scaled accelerograms matched to regional uniform hazard spectrum (UHS) for 475- and 2475-year return periods</td></tr><tr style="background:#FAFAF7"><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE">Nonlinear curves</td><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE;color:#222;font-weight:500">Darendeli (2001) G/Gmax and damping ratio, adjusted for PI and confining pressure from site-specific lab data</td></tr><tr style="background:#FFFFFF"><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE">Liquefaction triggering</td><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE;color:#222;font-weight:500">SPT-based NCEER (Youd et al. 2001) and CPT-based Robertson (2009) methods; LPI mapping per Iwasaki</td></tr><tr style="background:#FAFAF7"><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE">Deliverables</td><td style="padding:.7rem 1rem;border-bottom:1px solid #EEE;color:#222;font-weight:500">Microzone map (DWG/PDF), site response report, design spectra per zone, time histories for dynamic analysis</td></tr></tbody></table></div>
+
+            
+
+            <section>
+                <h2>Critical ground factors in Dundalk</h2>
+                <p>The risk contrast between a site on the northern side of Dundalk, where limestone bedrock sits within 3 meters of grade, and one near the Inner Relief Road on the estuarine flats is stark. The first might amplify short-period motion modestly; the second can double the spectral acceleration at periods around 0.5 to 1.0 seconds—right where a six-story concrete frame is sensitive. We have seen cases where ignoring microzonation pushed the base shear demand 40% above the code’s default Type 1 spectrum. That is not a margin you absorb with rebar; it is a margin that shows up as shear cracks if the detailing is tight. The Dundalk area also sits in a region where glacial isostatic rebound has left residual stresses in the crust, meaning small intraplate events can produce higher peak ground accelerations than the probabilistic maps might suggest. Couple that with soft, normally consolidated clays beneath the town center, and you have a setting where liquefaction-induced settlement—even from a M4.5 event 60 km offshore—can differential-heave a shallow footing. Microzonation is the only way to assign a defensible soil factor S to each foundation footprint.</p>
+            </section>
+
+            
+    <section class="block mid-cta-0e41-0e41" style="padding:2rem 0">
+      <div style="max-width:720px;margin:0 auto;background:linear-gradient(135deg,#16A34A15,#16A34A08);border-left:4px solid #16A34A;padding:1.6rem 1.8rem;border-radius:8px;text-align:center">
+        <h3 style="margin:0 0 .4rem;font-size:1.15rem;color:#1E293B;text-align:center">Need a geotechnical assessment?</h3>
+        <p style="margin:0 0 1rem;color:#64748B;font-size:.92rem;text-align:center">Reply within 24h.</p>
+        <div style="margin:.4rem 0 0;text-align:center"><a href="mailto:contact@geotechnical-engineering.co" style="display:inline-block;background:#16A34A;color:#FFF !important;padding:1rem 2rem;border-radius:8px;text-decoration:none;font-weight:800;font-size:1.05rem;box-shadow:0 4px 12px rgba(0,0,0,.15)">Email: contact@geotechnical-engineering.co</a></div>
+      </div>
+    </section>
+
+            <div class="normas">
+                <strong>Applicable standards:</strong> IS EN 1998-1:2005 (Eurocode 8: Design of structures for earthquake resistance, Irish National Annex), ASTM D4428/D4428M-14 (Standard Test Methods for Crosshole Seismic Testing, applied to downhole MASW verification), NCEER/NSF (Youd et al., 2001) liquefaction triggering framework for SPT-based analysis
+            </div>
+
+            <section>
+                <h2>Our services</h2>
+                <p>Every Dundalk project we take on starts with a drilling program designed to feed the microzonation model, not the other way around. Here is how we structure the workflow.</p>
+                <style>.servicios-grid a.servicio-link:hover{border-color:#D97706;box-shadow:0 4px 14px rgba(0,0,0,.08);transform:translateY(-2px)}.servicios-grid a.servicio-link:hover .servicio-arrow{transform:translateX(4px);opacity:1}.servicios-grid a.servicio-link{display:block;text-decoration:none;color:inherit;cursor:pointer}.servicios-grid a.servicio-link:hover h3{color:#D97706}.servicios-grid{display:flex;flex-wrap:wrap;gap:1rem;justify-content:flex-start}.servicios-grid .servicio{flex:0 0 calc(50% - .5rem);min-width:260px;padding:1rem 1.2rem;border:1px solid #E5E7EB;border-radius:10px;background:#FFFFFF;position:relative;transition:border-color .18s,box-shadow .18s,transform .18s}.servicio-arrow{position:absolute;right:1rem;bottom:.8rem;color:#D97706;font-weight:700;opacity:.55;transition:transform .18s,opacity .18s}</style><div class="servicios-grid"><div class="servicio"><h3>Site-Specific Ground Response Analysis</h3><p>We build 1D soil columns from borehole and Vs data, select input motions matched to the Irish National Annex’s elastic response spectrum, and compute surface acceleration time histories. The output is a design spectrum per microzone, including amplified spectral ordinates for short and long periods, ready for structural design in Dundalk’s variable ground conditions.</p></div><div class="servicio"><h3>Vs30 Mapping and Site Classification</h3><p>Using active and passive surface wave methods, we map shear wave velocity across the project footprint and assign IS EN 1998-1 site classes. For Dundalk sites straddling class boundaries, we provide probabilistic classification and recommend the conservative envelope where the structural period falls in the amplification plateau.</p></div><div class="servicio"><h3>Liquefaction Potential Index (LPI) Zoning</h3><p>For Dundalk sites with saturated sandy silts below the water table, we compute factor of safety against liquefaction at each SPT or CPT location and interpolate LPI contours across the site. The resulting map identifies zones where ground improvement—vibrocompaction or stone columns—must precede foundation work.</p></div></div>
+            </section>
+
+            <section>
+                <h2>FAQ</h2>
+                <details><summary>How much does a seismic microzonation study cost for a typical Dundalk commercial site?</summary><p>For a Dundalk site up to about one hectare with a reasonable borehole and MASW grid, the study typically ranges from €3,540 to €14,390. The spread depends on whether we need additional CPT soundings, downhole seismic verification, or 2D basin modeling. We scope the geophysics tightly to the structural engineer’s required spectra so you are not paying for resolution you will not use.</p></details><details><summary>Is seismic microzonation really necessary in Ireland given the low seismicity?</summary><p>Yes, and Dundalk is a good example of why. The Irish National Annex to Eurocode 8 requires site-specific assessment when ground conditions suggest Site Class D, E, or S1 soils. Much of central Dundalk, especially near the quays and river corridors, falls into these categories. A low seismic hazard combined with high site amplification can produce design forces comparable to a moderate-hazard rock site. The cost of the microzonation is a fraction of the structural overdesign you would otherwise carry.</p></details><details><summary>What borehole data do you need to run the site response analysis?</summary><p>We need SPT N-values at 1.5-meter intervals, unit weight and moisture content from undisturbed samples, and Atterberg limits and grain size curves for the cohesive and granular strata respectively. For Dundalk’s soft clays, we also run resonant column or triaxial tests to measure small-strain shear modulus (Gmax) directly. The combination of field Vs profiles and lab-measured nonlinear curves gives us the most defensible amplification factors.</p></details><details><summary>How do you account for the glacial till variability across Dundalk in the microzonation model?</summary><p>We treat the till as a stiff, preconsolidated layer with a Vs typically between 350 and 600 m/s in Dundalk, depending on the degree of overconsolidation and boulder content. Where the till pinches out or thickens, we interpolate its depth from seismic refraction and borehole control. The impedance contrast at the till-bedrock interface is explicitly modeled in the 1D analysis, and we run sensitivity cases to bound the uncertainty in till thickness before finalizing the microzone boundaries.</p></details><details><summary>What deliverables do we get at the end of a microzonation study?</summary><p>You receive a georeferenced microzone map with site class boundaries, a geotechnical interpretive report with the ground response methodology, design response spectra and acceleration time histories for each zone, and a liquefaction potential index map if saturated granular soils are present. All spectra are compatible with IS EN 1998-1 and ready for direct input into structural analysis software.</p></details>
+            </section>
+
+            <section>
+                <h2>Coverage in Dundalk</h2>
+                <link rel="stylesheet" href="/css/leaflet.css"/>
+                <div id="mapa-ciudad"></div>
+                <script src="/js/leaflet.js"></script>
+                <script>
+                    var map = L.map('mapa-ciudad').setView([54.0046,-6.4009], 12);
+                    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}@2x.png',{attribution:'&copy; OSM &copy; CARTO',subdomains:'abcd',maxZoom:19}).addTo(map);
+                    L.circle([54.0046,-6.4009],{radius:3000,color:'#D97706',fillColor:'#EA580C',fillOpacity:0.18,weight:2}).addTo(map).bindPopup('Coverage area — Dundalk');
+                </script>
+            </section>
+        </main>
+    </div>
+</div>
+
+<footer style="background:#171717;color:rgba(255,255,255,.85);padding:2rem 1.5rem;text-align:center;font-size:.92rem">Dundalk, Ireland · <a href="mailto:contact@geotechnical-engineering.co" style="color:#FFF;text-decoration:underline">contact@geotechnical-engineering.co</a><div data-authority-refs class="authority-refs" style="text-align:center;font-size:.8rem;padding:.5rem 0;opacity:.6"><strong>References:</strong> <a href="https://www.nsai.ie/" rel="nofollow noopener" target="_blank">NSAI Standards</a> · <a href="https://eurocodes.jrc.ec.europa.eu/showpage.php?id=132" rel="nofollow noopener" target="_blank">Eurocode 7</a> · <a href="https://www.iso.org/committee/49802.html" rel="nofollow noopener" target="_blank">ISO Geotechnical</a></div><div class="updated-info" data-updated="2026-04-17" style="text-align:center;font-size:.85rem;opacity:.7;padding:.5rem 0">Last updated: 2026-04-17</div></footer>
+
+<script>
+// Sidebar cat-toggle: click expande/contrae cat-sub (REGLA 30b)
+document.addEventListener('click', function(e) {
+    var btn = e.target.closest('.cat-toggle');
+    if (!btn) return;
+    e.preventDefault();
+    var item = btn.closest('.cat-item');
+    if (!item) return;
+    var sub = item.querySelector('.cat-sub');
+    if (!sub) return;
+    var open = btn.getAttribute('aria-expanded') === 'true';
+    btn.setAttribute('aria-expanded', open ? 'false' : 'true');
+    if (open) {
+        sub.setAttribute('hidden', '');
+    } else {
+        sub.removeAttribute('hidden');
+    }
+});
+</script>
+</body>
+</html>
