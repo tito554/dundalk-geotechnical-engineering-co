@@ -22,6 +22,11 @@
 
 @media (max-width: 900px) {
     .sidebar { display: none; }
+    .content-area { flex-direction: column; }
+    .container { padding: 1rem; }
+    .header-top { flex-direction: column; text-align: center; }
+    main { padding: 1.5rem; }
+}
 /* FIX 2026-04-18: selectores sin 'nav' para coincidir con el HTML real generado */
 .sidebar { padding: .5rem 0; }
 summary::-webkit-details-marker { display: none; }
@@ -54,11 +59,11 @@ summary::before { content: '+ '; color: var(--primary); font-weight: 700; }
 
 .content-area { display: flex; gap: 1.5rem; align-items: flex-start; }
 .servicios-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
-    .content-area { flex-direction: column; }
+    
 .header-contact a { color: rgba(255,255,255,0.85); font-size: .9rem; }
 
 header { background: var(--dark); color: white; padding: 1.5rem 0 2rem; }
-    main { padding: 1.5rem; }
+    
 .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
 details p { padding: .75rem 1.25rem; font-size: .9rem; color: #475569; margin: 0; }
 th, td { padding: .85rem 1rem; text-align: left; border-bottom: 1px solid #e2e8f0; }
@@ -92,7 +97,7 @@ tr:nth-child(even) { background: #f8fafc; }
 main h3 { color: var(--dark); font-size: 1.05rem; margin: 1.5rem 0 .5rem; font-weight: 600; }
 .servicio h3 { margin: 0 0 .5rem; color: var(--dark); font-size: .95rem; }
 .servicio { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.25rem; transition: border-color .2s; }
-    .container { padding: 1rem; }
+    
 .sidebar .cat-toggle[aria-expanded="true"] .cat-arrow { transform: rotate(180deg); display: inline-block; }
 .header-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; gap: 1rem; flex-wrap: wrap; }
 .sidebar nav .home:hover { background: rgba(255,255,255,0.08); }
@@ -115,7 +120,7 @@ summary { padding: 1rem 1.25rem; cursor: pointer; font-weight: 500; color: var(-
 
 table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: .9rem; }
 .sidebar .cat-sub[hidden] { display: none; }
-    .header-top { flex-direction: column; text-align: center; }
+    
 main section { margin-bottom: 1.5rem; }
 details[open] summary::before { content: '− '; }
 .cta .whatsapp-sub { font-size: .85rem; opacity: .85; margin-bottom: 1rem; }
@@ -129,7 +134,9 @@ footer a { color: rgba(255,255,255,0.85); }
     background: rgba(0,0,0,0.15); display: flex; flex-direction: column;
 }
 /* Pattern moderno cat-name + cat-toggle (REGLA 30b) */
-.sidebar .cat-item { border-top: 1px solid rgba(255,255,255,0.04); }</style>
+.sidebar .cat-item { border-top: 1px solid rgba(255,255,255,0.04); }
+
+</style>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"description":"Geotechnical laboratory testing in Dundalk provides essential classification and compliance data tied directly to the local lodgement till and glaciolacust","isPartOf":{"url":"https://dundalk.geotechnical-engineering.co","@id":"https://dundalk.geotechnical-engineering.co/#website","@type":"WebSite"},"name":"Laboratory in Dundalk – Ireland","inLanguage":"en","@type":"WebPage","@id":"https://dundalk.geotechnical-engineering.co/laboratory/","url":"https://dundalk.geotechnical-engineering.co/laboratory/"},{"itemListElement":[{"name":"Home","item":"https://dundalk.geotechnical-engineering.co/","@type":"ListItem","position":1},{"name":"Laboratory","item":"https://dundalk.geotechnical-engineering.co/laboratory/","@type":"ListItem","position":2}],"@type":"BreadcrumbList"},{"name":"Laboratory","itemListElement":[{"name":"Atterberg limits","url":"https://dundalk.geotechnical-engineering.co/atterberg-limits/","@type":"ListItem","position":1},{"name":"Grain size analysis (sieve + hydrometer)","url":"https://dundalk.geotechnical-engineering.co/grain-size/","@type":"ListItem","position":2}],"@type":"ItemList"}]}</script><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#1E3A8A"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"></head>
 <body>
 
@@ -197,7 +204,14 @@ footer a { color: rgba(255,255,255,0.85); }
             </section>
 
             
-<section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto"><h2 style="margin-bottom:1.5rem;font-weight:700">Available services</h2><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem"><a href="../atterberg-limits/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Atterberg limits</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../grain-size/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Grain size analysis (sieve + hydrometer)</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a></div></div></section></main>
+<section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto">
+<img src="/img/ensayo-triaxial-5.webp" alt="Laboratory in Dundalk" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+<p>Geotechnical laboratory testing in Dundalk provides the definitive physical characterisation of soils and rocks recovered during ground investigations. Our facility delivers precise measurement of strength, compressibility, permeability, and classification parameters, supporting safe foundation design across the region. Local geology—dominated by glacial tills, alluvial deposits of the Castletown River, and occasional limestone bedrock—demands rigorous testing to identify variable ground conditions. This service integrates directly with field programmes, from <a href="/investigation/">ground investigation</a> planning to advanced <a href="/cpt-test/">cone penetration testing</a>, ensuring soil descriptions are validated and refined through controlled laboratory procedures.</p>
+<p>All testing is conducted in accordance with Irish and British standards, principally IS EN ISO 17892 and the BS 1377 series, as referenced in the National Annex to Eurocode 7. Classification tests follow strict protocols: natural moisture content, bulk and dry density, and particle size distribution via <a href="/grain-size/">sieve and hydrometer analysis</a>. Plasticity characteristics are determined through <a href="/atterberg-limits/">Atterberg limits</a> testing, yielding liquid limit, plastic limit, and plasticity index essential for shrink-swell assessment. Strength and compressibility are quantified using unconfined compressive strength on cohesive soils, triaxial compression, and oedometer consolidation tests, with careful specimen preparation reflecting in-situ conditions recorded during sampling and <a href="/lab-in-situ/">in-situ testing</a>.</p>
+<p>Projects across Dundalk benefit from laboratory programmes tailored to local ground challenges. Residential developments on the expansive till plains require consolidation and plasticity data to design strip and trench fill foundations, while commercial schemes along the quays and inner relief road corridors demand permeability and shear strength parameters for retaining walls and deep excavations. Infrastructure works, including road widening and flood alleviation embankments, rely on compaction-related testing and classification to verify fill suitability. These programmes are closely coordinated with <a href="/sand-cone-density/">field density testing using the sand cone method</a>, linking laboratory optimums to site compaction control and providing a complete picture of engineered fill performance.</p>
+<img src="/img/granulometria-1.webp" alt="Laboratory in Dundalk" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+
+<p>A structured laboratory programme begins with sample logging and selection, followed by a phased testing schedule aligned with project risk and design milestones. Results are delivered in comprehensive factual reports, with data tables and graphical plots of grading curves, consolidation curves, and Mohr-Coulomb failure envelopes. Interpretation is integrated with field observations and CPT profiles, enabling derivation of characteristic values for <a href="/foundations/">foundation design</a> in full compliance with Eurocode 7 and the Irish Building Regulations. This rigorous, standardised approach reduces geological uncertainty, optimises foundation solutions, and provides verifiable assurance for architects, structural engineers, and local authority submissions.</p></div></section></main>
     </div>
 </div>
 

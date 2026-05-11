@@ -22,6 +22,11 @@
 
 @media (max-width: 900px) {
     .sidebar { display: none; }
+    .content-area { flex-direction: column; }
+    .container { padding: 1rem; }
+    .header-top { flex-direction: column; text-align: center; }
+    main { padding: 1.5rem; }
+}
 /* FIX 2026-04-18: selectores sin 'nav' para coincidir con el HTML real generado */
 .sidebar { padding: .5rem 0; }
 summary::-webkit-details-marker { display: none; }
@@ -54,11 +59,11 @@ summary::before { content: '+ '; color: var(--primary); font-weight: 700; }
 
 .content-area { display: flex; gap: 1.5rem; align-items: flex-start; }
 .servicios-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
-    .content-area { flex-direction: column; }
+    
 .header-contact a { color: rgba(255,255,255,0.85); font-size: .9rem; }
 
 header { background: var(--dark); color: white; padding: 1.5rem 0 2rem; }
-    main { padding: 1.5rem; }
+    
 .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
 details p { padding: .75rem 1.25rem; font-size: .9rem; color: #475569; margin: 0; }
 th, td { padding: .85rem 1rem; text-align: left; border-bottom: 1px solid #e2e8f0; }
@@ -92,7 +97,7 @@ tr:nth-child(even) { background: #f8fafc; }
 main h3 { color: var(--dark); font-size: 1.05rem; margin: 1.5rem 0 .5rem; font-weight: 600; }
 .servicio h3 { margin: 0 0 .5rem; color: var(--dark); font-size: .95rem; }
 .servicio { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.25rem; transition: border-color .2s; }
-    .container { padding: 1rem; }
+    
 .sidebar .cat-toggle[aria-expanded="true"] .cat-arrow { transform: rotate(180deg); display: inline-block; }
 .header-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; gap: 1rem; flex-wrap: wrap; }
 .sidebar nav .home:hover { background: rgba(255,255,255,0.08); }
@@ -115,7 +120,7 @@ summary { padding: 1rem 1.25rem; cursor: pointer; font-weight: 500; color: var(-
 
 table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: .9rem; }
 .sidebar .cat-sub[hidden] { display: none; }
-    .header-top { flex-direction: column; text-align: center; }
+    
 main section { margin-bottom: 1.5rem; }
 details[open] summary::before { content: '− '; }
 .cta .whatsapp-sub { font-size: .85rem; opacity: .85; margin-bottom: 1rem; }
@@ -129,7 +134,9 @@ footer a { color: rgba(255,255,255,0.85); }
     background: rgba(0,0,0,0.15); display: flex; flex-direction: column;
 }
 /* Pattern moderno cat-name + cat-toggle (REGLA 30b) */
-.sidebar .cat-item { border-top: 1px solid rgba(255,255,255,0.04); }</style>
+.sidebar .cat-item { border-top: 1px solid rgba(255,255,255,0.04); }
+
+</style>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"description":"Underground excavations in Dundalk must contend with the region's complex glacial till and alluvial deposits, where soft silty clays overlying limestone be","isPartOf":{"url":"https://dundalk.geotechnical-engineering.co","@id":"https://dundalk.geotechnical-engineering.co/#website","@type":"WebSite"},"name":"Underground Excavations in Dundalk – Ireland","inLanguage":"en","@type":"WebPage","@id":"https://dundalk.geotechnical-engineering.co/excavations/","url":"https://dundalk.geotechnical-engineering.co/excavations/"},{"itemListElement":[{"name":"Home","item":"https://dundalk.geotechnical-engineering.co/","@type":"ListItem","position":1},{"name":"Underground Excavations","item":"https://dundalk.geotechnical-engineering.co/excavations/","@type":"ListItem","position":2}],"@type":"BreadcrumbList"},{"name":"Underground Excavations","itemListElement":[{"name":"Geotechnical analysis for soft soil tunnels","url":"https://dundalk.geotechnical-engineering.co/soft-ground-tunnels/","@type":"ListItem","position":1},{"name":"Geotechnical design of deep excavations","url":"https://dundalk.geotechnical-engineering.co/deep-excavations/","@type":"ListItem","position":2},{"name":"Geotechnical excavation monitoring","url":"https://dundalk.geotechnical-engineering.co/excavation-monitoring/","@type":"ListItem","position":3}],"@type":"ItemList"}]}</script><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#1E3A8A"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"></head>
 <body>
 
@@ -199,7 +206,14 @@ footer a { color: rgba(255,255,255,0.85); }
             </section>
 
             
-<section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto"><h2 style="margin-bottom:1.5rem;font-weight:700">Available services</h2><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem"><a href="../soft-ground-tunnels/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Geotechnical analysis for soft soil tunnels</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../deep-excavations/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Geotechnical design of deep excavations</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../excavation-monitoring/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Geotechnical excavation monitoring</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a></div></div></section></main>
+<section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto">
+<img src="/img/excavaciones-profundas-3.webp" alt="Underground Excavations in Dundalk" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+<p>Underground excavations in Dundalk demand a rigorous understanding of variable ground conditions dominated by glacial tills, alluvial deposits, and occasional cohesive lodgement tills overlying shale bedrock. A safe and stable excavation—whether for basements, utility trenches, or deep foundations—requires detailed knowledge of soil behaviour, groundwater levels, and the specific weathering profile of the underlying Clogher Head Formation. Our approach begins with a targeted geotechnical <a href="/investigation/">investigation</a> designed to map these strata precisely. In this coastal context, we also account for aggressive ground conditions, integrating chemical testing for sulfates and pH via our <a href="/laboratory/">laboratory</a> services to ensure long-term material compatibility and structural durability in accordance with the National Annex to Eurocode 7.</p>
+<p>Methodology is strictly governed by IS EN 1997-2:2007 and the guidance provided by the Institution of Engineers of Ireland. We define soil strength and deformation parameters through high-resolution in-situ techniques, notably the <a href="/cpt-test/">Cone Penetration Test</a>, which provides a continuous profile of tip resistance and sleeve friction to identify soft spots and bearing strata without disturbing the soil fabric. For temporary works design, we combine this with advanced <a href="/lab-in-situ/">in-situ testing</a> to measure lateral earth pressures. When assessing the suitability of excavated material for reuse as engineered fill, compliance with the Specification for Road Works Series 600 is verified through immediate field compaction control using the <a href="/sand-cone-density/">sand cone density method</a>, ensuring that backfill meets the specified relative compaction targets without risking future settlement.</p>
+<p>Typical projects in the Dundalk area range from deep basement excavations in the town centre, where adjacent historic structures demand zero-deflection support systems, to open-cut trenching for infrastructure upgrades in the Muirheevnamore and Cox's Demesne residential zones. A critical local challenge is the management of high groundwater within permeable gravel lenses, which often requires active dewatering and detailed stability analyses. For deep excavations, classifying the fine-grained glacial tills relies on precise index testing, where our <a href="/atterberg-limits/">Atterberg limits</a> analysis is essential to predict the plastic behaviour and potential for squeezing ground, directly informing the selection of appropriate shoring and fluid pressure control measures.</p>
+<img src="/img/tuneles-suelo-blando-1.webp" alt="Underground Excavations in Dundalk" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+
+<p>Our process delivers a fully integrated design package, moving from factual site data to an interpretive Ground Investigation Report and a Geotechnical Design Report detailing earth retention, basal heave resistance, and groundwater control. By correlating the high-resolution data from CPT soundings with rigorous particle size distribution testing, including <a href="/grain-size/">grain size analysis</a> via sieving and hydrometer sedimentation, we eliminate geological uncertainty. This technical precision translates directly into value: optimising excavation profiles, preventing costly overruns from unexpected ground changes, and providing the auditable compliance documentation required to satisfy the Building Control (Amendment) Regulations for underground construction in County Louth.</p></div></section></main>
     </div>
 </div>
 

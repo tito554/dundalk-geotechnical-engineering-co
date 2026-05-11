@@ -25,6 +25,11 @@
 
 @media (max-width: 900px) {
     .sidebar { display: none; }
+    .content-area { flex-direction: column; }
+    .container { padding: 1rem; }
+    .header-top { flex-direction: column; text-align: center; }
+    main { padding: 1.5rem; }
+}
 /* FIX 2026-04-18: selectores sin 'nav' para coincidir con el HTML real generado */
 .sidebar { padding: .5rem 0; }
 summary::-webkit-details-marker { display: none; }
@@ -57,11 +62,11 @@ summary::before { content: '+ '; color: var(--primary); font-weight: 700; }
 
 .content-area { display: flex; gap: 1.5rem; align-items: flex-start; }
 .servicios-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
-    .content-area { flex-direction: column; }
+    
 .header-contact a { color: rgba(255,255,255,0.85); font-size: .9rem; }
 
 header { background: var(--dark); color: white; padding: 1.5rem 0 2rem; }
-    main { padding: 1.5rem; }
+    
 .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
 details p { padding: .75rem 1.25rem; font-size: .9rem; color: #475569; margin: 0; }
 th, td { padding: .85rem 1rem; text-align: left; border-bottom: 1px solid #e2e8f0; }
@@ -95,7 +100,7 @@ tr:nth-child(even) { background: #f8fafc; }
 main h3 { color: var(--dark); font-size: 1.05rem; margin: 1.5rem 0 .5rem; font-weight: 600; }
 .servicio h3 { margin: 0 0 .5rem; color: var(--dark); font-size: .95rem; }
 .servicio { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.25rem; transition: border-color .2s; }
-    .container { padding: 1rem; }
+    
 .sidebar .cat-toggle[aria-expanded="true"] .cat-arrow { transform: rotate(180deg); display: inline-block; }
 .header-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; gap: 1rem; flex-wrap: wrap; }
 .sidebar nav .home:hover { background: rgba(255,255,255,0.08); }
@@ -118,7 +123,7 @@ summary { padding: 1rem 1.25rem; cursor: pointer; font-weight: 500; color: var(-
 
 table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: .9rem; }
 .sidebar .cat-sub[hidden] { display: none; }
-    .header-top { flex-direction: column; text-align: center; }
+    
 main section { margin-bottom: 1.5rem; }
 details[open] summary::before { content: '− '; }
 .cta .whatsapp-sub { font-size: .85rem; opacity: .85; margin-bottom: 1rem; }
@@ -132,7 +137,9 @@ footer a { color: rgba(255,255,255,0.85); }
     background: rgba(0,0,0,0.15); display: flex; flex-direction: column;
 }
 /* Pattern moderno cat-name + cat-toggle (REGLA 30b) */
-.sidebar .cat-item { border-top: 1px solid rgba(255,255,255,0.04); }</style>
+.sidebar .cat-item { border-top: 1px solid rgba(255,255,255,0.04); }
+
+</style>
 <link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#1E3A8A"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"></head>
 <body>
 
@@ -177,6 +184,8 @@ footer a { color: rgba(255,255,255,0.85); }
 
             <section>
                 <h2>Critical ground factors in Dundalk</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <p>The most frequent mistake we observe in Dundalk is designing a gravity wall with a base width that works on paper but ignores the low shear strength of the alluvial layer at founding depth. A contractor excavates to formation, sees 'firm brown clay,' and proceeds without testing, only to have the wall tilt forward after two wet winters when the clay softens under prolonged saturation. Another recurring issue is underestimating the surcharge from adjacent roadways. The M1 and the R132 both carry heavy HGV traffic, and the cyclic loading from passing trucks imposes a lateral stress regime on nearby retaining structures that static design calculations often overlook. Without a proper site investigation that includes <a data-interlink="1" href="/in-situ-permeability/">in-situ permeability testing</a> to characterise drainage rates, the wall backfill can saturate, pore pressures increase, and the factor of safety drops below unity over a single storm event. Time-to-failure in these soils is rarely immediate; it is progressive, which makes the absence of monitoring even riskier.</p>
             </section>
 
@@ -201,6 +210,8 @@ footer a { color: rgba(255,255,255,0.85); }
 
             <section>
                 <h2>FAQ</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <details><summary>What soil parameters does Eurocode 7 require for retaining wall design in Dundalk?</summary><p>For Design Approach 1 (DA1), you need effective friction angle (φ'), effective cohesion (c'), undrained shear strength (cu) for short-term conditions, bulk unit weight (γ), and stiffness parameters for serviceability checks. In Dundalk's glacial till, φ' typically ranges from 32° to 38° depending on density, while alluvial clays show cu values between 25 and 60 kPa. Our lab delivers these from triaxial and direct shear testing per EN ISO 17892-10 and ASTM D4767.</p></details><details><summary>How much does a retaining wall design soil testing package cost?</summary><p>A typical testing package for a retaining wall in Dundalk ranges from €1,070 to €4,100, depending on the number of boreholes, the depth of investigation, and the specific tests required. A basic package for a small garden wall might include classification tests plus direct shear, while a full commercial project near the Castletown River would add triaxial tests, oedometer consolidation, and permeability assessment. We provide a fixed-price quotation after reviewing the site location and wall geometry.</p></details><details><summary>Which type of retaining wall suits Dundalk's soft alluvial ground?</summary><p>Embedded walls or cantilever piles often perform better than gravity walls in the soft alluvium south of the town centre because they bypass the weak near-surface layer and transfer load to the denser till below. For modest height differences, reinforced soil walls with good quality granular backfill can work but demand rigorous drainage detailing. The choice depends on the undrained shear strength profile and the groundwater regime, both of which we quantify through site-specific laboratory testing.</p></details><details><summary>How long does the laboratory testing take for a retaining wall project?</summary><p>Classification tests (moisture content, Atterberg limits, particle size distribution) are typically reported within 5 to 7 working days. Consolidated-undrained triaxial tests, which require saturation and consolidation stages, take 10 to 15 working days. Oedometer consolidation tests run 7 to 10 days. We can fast-track critical parameters if the site programme demands it, and we always discuss the testing schedule during the proposal stage so it aligns with the design team's milestones.</p></details>
             </section>
 

@@ -25,6 +25,11 @@
 
 @media (max-width: 900px) {
     .sidebar { display: none; }
+    .content-area { flex-direction: column; }
+    .container { padding: 1rem; }
+    .header-top { flex-direction: column; text-align: center; }
+    main { padding: 1.5rem; }
+}
 /* FIX 2026-04-18: selectores sin 'nav' para coincidir con el HTML real generado */
 .sidebar { padding: .5rem 0; }
 summary::-webkit-details-marker { display: none; }
@@ -57,11 +62,11 @@ summary::before { content: '+ '; color: var(--primary); font-weight: 700; }
 
 .content-area { display: flex; gap: 1.5rem; align-items: flex-start; }
 .servicios-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
-    .content-area { flex-direction: column; }
+    
 .header-contact a { color: rgba(255,255,255,0.85); font-size: .9rem; }
 
 header { background: var(--dark); color: white; padding: 1.5rem 0 2rem; }
-    main { padding: 1.5rem; }
+    
 .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
 details p { padding: .75rem 1.25rem; font-size: .9rem; color: #475569; margin: 0; }
 th, td { padding: .85rem 1rem; text-align: left; border-bottom: 1px solid #e2e8f0; }
@@ -95,7 +100,7 @@ tr:nth-child(even) { background: #f8fafc; }
 main h3 { color: var(--dark); font-size: 1.05rem; margin: 1.5rem 0 .5rem; font-weight: 600; }
 .servicio h3 { margin: 0 0 .5rem; color: var(--dark); font-size: .95rem; }
 .servicio { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.25rem; transition: border-color .2s; }
-    .container { padding: 1rem; }
+    
 .sidebar .cat-toggle[aria-expanded="true"] .cat-arrow { transform: rotate(180deg); display: inline-block; }
 .header-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; gap: 1rem; flex-wrap: wrap; }
 .sidebar nav .home:hover { background: rgba(255,255,255,0.08); }
@@ -118,7 +123,7 @@ summary { padding: 1rem 1.25rem; cursor: pointer; font-weight: 500; color: var(-
 
 table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: .9rem; }
 .sidebar .cat-sub[hidden] { display: none; }
-    .header-top { flex-direction: column; text-align: center; }
+    
 main section { margin-bottom: 1.5rem; }
 details[open] summary::before { content: '− '; }
 .cta .whatsapp-sub { font-size: .85rem; opacity: .85; margin-bottom: 1rem; }
@@ -132,7 +137,9 @@ footer a { color: rgba(255,255,255,0.85); }
     background: rgba(0,0,0,0.15); display: flex; flex-direction: column;
 }
 /* Pattern moderno cat-name + cat-toggle (REGLA 30b) */
-.sidebar .cat-item { border-top: 1px solid rgba(255,255,255,0.04); }</style>
+.sidebar .cat-item { border-top: 1px solid rgba(255,255,255,0.04); }
+
+</style>
 <link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#1E3A8A"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"></head>
 <body>
 
@@ -177,6 +184,8 @@ footer a { color: rgba(255,255,255,0.85); }
 
             <section>
                 <h2>Critical ground factors in Dundalk</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <p>Dundalk sits at roughly 10 metres above sea level and its eastern edge is barely above the high tide mark. Combine that elevation with a groundwater table that often sits within 1.5 metres of the surface, and you have conditions where pore pressure softening can amplify ground motion during a distant earthquake. Ireland is a low-to-moderate seismicity region — the Irish National Annex to Eurocode 8 assigns a reference peak ground acceleration of 0.04 g to Dundalk — but the site amplification factor for a soft soil profile can multiply that by 1.6 or more. A building on ground type D experiences spectral accelerations equivalent to a structure on rock in a significantly higher seismic zone. Developers who skip the Vs30 measurement and default to ground type B are effectively under-designing the lateral load path. The 2013 Llŷn Peninsula earthquake, felt along the east coast, reminded engineers that shallow crustal events in the Irish Sea are real. For critical infrastructure — schools, healthcare, emergency response facilities — the TII and Department of Education now routinely ask for a site-specific shear wave velocity profile. MASW delivers it without the access constraints of borehole methods.</p>
             </section>
 
@@ -201,6 +210,8 @@ footer a { color: rgba(255,255,255,0.85); }
 
             <section>
                 <h2>FAQ</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <details><summary>What is the cost of a MASW survey in Dundalk?</summary><p>A typical MASW survey for site classification on a standard development plot in Dundalk falls between €1,540 and €2,470. The final figure depends on the number of array positions, the target depth, and whether 1D spot measurements or a 2D roll-along line is required. We provide a fixed-price quotation after reviewing the site location and the project brief.</p></details><details><summary>How does MASW compare with downhole seismic testing?</summary><p>MASW is non-invasive — no borehole required — which makes it faster and less costly on accessible greenfield sites. Downhole testing gives a more precise Vs log at a single point and works on congested urban plots where a 60-metre geophone spread cannot be laid out. In Dundalk we often recommend MASW for open sites and downhole or crosshole methods for tight urban infill projects where space is limited.</p></details><details><summary>Which Eurocode 8 ground type applies to most of Dundalk?</summary><p>There is no single answer — Dundalk's ground conditions vary sharply. Sites on the Cooley till north of town often classify as ground type B (Vs30 > 360 m/s), while the softer silts and alluvium near the Castletown River and the inner bay typically fall into ground type C or D (Vs30 between 180 and 360 m/s). A site-specific MASW survey is the only reliable way to determine the correct classification.</p></details><details><summary>How long does a MASW survey take on site?</summary><p>A single 1D MASW sounding with a 24-channel array takes about 30 to 45 minutes once the geophones are laid out. A 2D roll-along line covering 120 metres of survey length can be completed in half a day. We deliver the processed Vs profile and the Vs30 report within five working days of field acquisition.</p></details><details><summary>Can MASW be used for liquefaction assessment in Ireland?</summary><p>Yes. Although Ireland's seismic hazard is moderate, liquefaction screening is required for certain TII structures and for projects in areas with saturated loose sands. Vs-based liquefaction triggering procedures (Andrus & Stokoe, Youd & Idriss) are directly applicable, and the Vs30 from MASW feeds into the simplified procedure for estimating cyclic resistance ratios.</p></details>
             </section>
 

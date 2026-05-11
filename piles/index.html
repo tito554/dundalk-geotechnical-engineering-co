@@ -25,6 +25,11 @@
 
 @media (max-width: 900px) {
     .sidebar { display: none; }
+    .content-area { flex-direction: column; }
+    .container { padding: 1rem; }
+    .header-top { flex-direction: column; text-align: center; }
+    main { padding: 1.5rem; }
+}
 /* FIX 2026-04-18: selectores sin 'nav' para coincidir con el HTML real generado */
 .sidebar { padding: .5rem 0; }
 summary::-webkit-details-marker { display: none; }
@@ -57,11 +62,11 @@ summary::before { content: '+ '; color: var(--primary); font-weight: 700; }
 
 .content-area { display: flex; gap: 1.5rem; align-items: flex-start; }
 .servicios-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
-    .content-area { flex-direction: column; }
+    
 .header-contact a { color: rgba(255,255,255,0.85); font-size: .9rem; }
 
 header { background: var(--dark); color: white; padding: 1.5rem 0 2rem; }
-    main { padding: 1.5rem; }
+    
 .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
 details p { padding: .75rem 1.25rem; font-size: .9rem; color: #475569; margin: 0; }
 th, td { padding: .85rem 1rem; text-align: left; border-bottom: 1px solid #e2e8f0; }
@@ -95,7 +100,7 @@ tr:nth-child(even) { background: #f8fafc; }
 main h3 { color: var(--dark); font-size: 1.05rem; margin: 1.5rem 0 .5rem; font-weight: 600; }
 .servicio h3 { margin: 0 0 .5rem; color: var(--dark); font-size: .95rem; }
 .servicio { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.25rem; transition: border-color .2s; }
-    .container { padding: 1rem; }
+    
 .sidebar .cat-toggle[aria-expanded="true"] .cat-arrow { transform: rotate(180deg); display: inline-block; }
 .header-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; gap: 1rem; flex-wrap: wrap; }
 .sidebar nav .home:hover { background: rgba(255,255,255,0.08); }
@@ -118,7 +123,7 @@ summary { padding: 1rem 1.25rem; cursor: pointer; font-weight: 500; color: var(-
 
 table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: .9rem; }
 .sidebar .cat-sub[hidden] { display: none; }
-    .header-top { flex-direction: column; text-align: center; }
+    
 main section { margin-bottom: 1.5rem; }
 details[open] summary::before { content: '− '; }
 .cta .whatsapp-sub { font-size: .85rem; opacity: .85; margin-bottom: 1rem; }
@@ -132,7 +137,9 @@ footer a { color: rgba(255,255,255,0.85); }
     background: rgba(0,0,0,0.15); display: flex; flex-direction: column;
 }
 /* Pattern moderno cat-name + cat-toggle (REGLA 30b) */
-.sidebar .cat-item { border-top: 1px solid rgba(255,255,255,0.04); }</style>
+.sidebar .cat-item { border-top: 1px solid rgba(255,255,255,0.04); }
+
+</style>
 <link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#1E3A8A"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"></head>
 <body>
 
@@ -195,6 +202,8 @@ footer a { color: rgba(255,255,255,0.85); }
 
             <section>
                 <h2>Our services</h2>
+<hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
+
                 <p>Our pile design process in Dundalk runs from ground investigation through to construction-phase support. Each step is calibrated to the local geology.</p>
                 <style>.servicios-grid a.servicio-link:hover{border-color:#D97706;box-shadow:0 4px 14px rgba(0,0,0,.08);transform:translateY(-2px)}.servicios-grid a.servicio-link:hover .servicio-arrow{transform:translateX(4px);opacity:1}.servicios-grid a.servicio-link{display:block;text-decoration:none;color:inherit;cursor:pointer}.servicios-grid a.servicio-link:hover h3{color:#D97706}.servicios-grid{display:flex;flex-wrap:wrap;gap:1rem;justify-content:flex-start}.servicios-grid .servicio{flex:0 0 calc(50% - .5rem);min-width:260px;padding:1rem 1.2rem;border:1px solid #E5E7EB;border-radius:10px;background:#FFFFFF;position:relative;transition:border-color .18s,box-shadow .18s,transform .18s}.servicio-arrow{position:absolute;right:1rem;bottom:.8rem;color:#D97706;font-weight:700;opacity:.55;transition:transform .18s,opacity .18s}</style><div class="servicios-grid"><div class="servicio"><h3>Geotechnical Interpretative Report for Piling</h3><p>We compile borehole logs, CPT soundings, and lab data into a single ground model. The report assigns design parameters per stratum, defines pile socket length in rock, and identifies any requirement for pilot holes through cobble-rich till.</p></div><div class="servicio"><h3>Axial Capacity and Settlement Analysis</h3><p>Using site-specific undrained shear strength and effective friction angles, we calculate shaft and base resistance. Settlement of single piles and groups is modelled, including t-z curve analysis for layered soils.</p></div><div class="servicio"><h3>Pile Installation Support and Testing</h3><p>We review rig logs, monitor concrete placement, and supervise static load tests or high-strain dynamic testing. When conditions change, we adjust the design criteria on site.</p></div></div>
             </section>

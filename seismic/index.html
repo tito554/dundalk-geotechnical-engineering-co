@@ -22,6 +22,11 @@
 
 @media (max-width: 900px) {
     .sidebar { display: none; }
+    .content-area { flex-direction: column; }
+    .container { padding: 1rem; }
+    .header-top { flex-direction: column; text-align: center; }
+    main { padding: 1.5rem; }
+}
 /* FIX 2026-04-18: selectores sin 'nav' para coincidir con el HTML real generado */
 .sidebar { padding: .5rem 0; }
 summary::-webkit-details-marker { display: none; }
@@ -54,11 +59,11 @@ summary::before { content: '+ '; color: var(--primary); font-weight: 700; }
 
 .content-area { display: flex; gap: 1.5rem; align-items: flex-start; }
 .servicios-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
-    .content-area { flex-direction: column; }
+    
 .header-contact a { color: rgba(255,255,255,0.85); font-size: .9rem; }
 
 header { background: var(--dark); color: white; padding: 1.5rem 0 2rem; }
-    main { padding: 1.5rem; }
+    
 .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
 details p { padding: .75rem 1.25rem; font-size: .9rem; color: #475569; margin: 0; }
 th, td { padding: .85rem 1rem; text-align: left; border-bottom: 1px solid #e2e8f0; }
@@ -92,7 +97,7 @@ tr:nth-child(even) { background: #f8fafc; }
 main h3 { color: var(--dark); font-size: 1.05rem; margin: 1.5rem 0 .5rem; font-weight: 600; }
 .servicio h3 { margin: 0 0 .5rem; color: var(--dark); font-size: .95rem; }
 .servicio { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.25rem; transition: border-color .2s; }
-    .container { padding: 1rem; }
+    
 .sidebar .cat-toggle[aria-expanded="true"] .cat-arrow { transform: rotate(180deg); display: inline-block; }
 .header-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; gap: 1rem; flex-wrap: wrap; }
 .sidebar nav .home:hover { background: rgba(255,255,255,0.08); }
@@ -115,7 +120,7 @@ summary { padding: 1rem 1.25rem; cursor: pointer; font-weight: 500; color: var(-
 
 table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: .9rem; }
 .sidebar .cat-sub[hidden] { display: none; }
-    .header-top { flex-direction: column; text-align: center; }
+    
 main section { margin-bottom: 1.5rem; }
 details[open] summary::before { content: '− '; }
 .cta .whatsapp-sub { font-size: .85rem; opacity: .85; margin-bottom: 1rem; }
@@ -129,7 +134,9 @@ footer a { color: rgba(255,255,255,0.85); }
     background: rgba(0,0,0,0.15); display: flex; flex-direction: column;
 }
 /* Pattern moderno cat-name + cat-toggle (REGLA 30b) */
-.sidebar .cat-item { border-top: 1px solid rgba(255,255,255,0.04); }</style>
+.sidebar .cat-item { border-top: 1px solid rgba(255,255,255,0.04); }
+
+</style>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"description":"Seismic assessment in Dundalk must account for the complex glacial geology underlying the town, where soft alluvial and lacustrine deposits can amplify gro","isPartOf":{"url":"https://dundalk.geotechnical-engineering.co","@id":"https://dundalk.geotechnical-engineering.co/#website","@type":"WebSite"},"name":"Seismic in Dundalk – Ireland","inLanguage":"en","@type":"WebPage","@id":"https://dundalk.geotechnical-engineering.co/seismic/","url":"https://dundalk.geotechnical-engineering.co/seismic/"},{"itemListElement":[{"name":"Home","item":"https://dundalk.geotechnical-engineering.co/","@type":"ListItem","position":1},{"name":"Seismic","item":"https://dundalk.geotechnical-engineering.co/seismic/","@type":"ListItem","position":2}],"@type":"BreadcrumbList"},{"name":"Seismic","itemListElement":[{"name":"Base isolation seismic design","url":"https://dundalk.geotechnical-engineering.co/seismic-isolation/","@type":"ListItem","position":1},{"name":"Seismic microzonation","url":"https://dundalk.geotechnical-engineering.co/seismic-microzonation/","@type":"ListItem","position":2},{"name":"Soil liquefaction analysis","url":"https://dundalk.geotechnical-engineering.co/liquefaction/","@type":"ListItem","position":3}],"@type":"ItemList"}]}</script><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#1E3A8A"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"></head>
 <body>
 
@@ -198,7 +205,14 @@ footer a { color: rgba(255,255,255,0.85); }
             </section>
 
             
-<section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto"><h2 style="margin-bottom:1.5rem;font-weight:700">Available services</h2><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem"><a href="../seismic-isolation/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Base isolation seismic design</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../seismic-microzonation/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Seismic microzonation</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../liquefaction/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Soil liquefaction analysis</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a></div></div></section></main>
+<section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto">
+<img src="/img/tomografia-sismica-2.webp" alt="Seismic in Dundalk" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+<p>In Dundalk, seismic site assessment forms a critical component of geotechnical design, particularly given the region's complex Quaternary geology dominated by glacial tills, alluvial deposits, and occasional rockhead at variable depths. Compliance with Irish Standard I.S. EN 1998-1:2005 (Eurocode 8, Irish National Annex) governs the classification of ground types and the determination of seismic design parameters. A thorough <a href="/investigation/">investigation</a> must delineate the stratigraphy and dynamic soil properties, as the local lodgement tills and softer alluvial silts along the Castletown River and Dundalk Bay can significantly amplify seismic waves. Our approach integrates this regulatory framework with a detailed understanding of local ground conditions, ensuring that structures are resilient against low-to-moderate seismicity.</p>
+<p>The core methodology for seismic ground characterization in Dundalk relies on a combination of direct and indirect techniques, strictly adhering to the I.S. EN ISO 22476 series for ground investigation and testing. We establish shear wave velocity (Vs) profiles, the primary parameter for Eurocode 8 site classification, through advanced <a href="/cpt-test/">CPT</a> and <a href="/lab-in-situ/">in-situ testing</a>, specifically employing seismic piezocone (SCPTu) to provide continuous data through the soft, often under-consolidated estuarine clays. This data is directly correlated with results from our <a href="/laboratory/">laboratory</a> programme, where resonant column and cyclic triaxial tests measure small-strain shear modulus and degradation curves, respectively. Further index testing, including <a href="/atterberg-limits/">Atterberg limits</a> and <a href="/grain-size/">grain size analysis</a>, is essential for classifying the fine-grained tills and assessing their potential for cyclic softening under seismic loading.</p>
+<p>Seismic risk assessment in Dundalk is integral to the design of typical infrastructure and commercial projects, from bridge foundations crossing the Castletown River to wind turbine bases on the Cooley Peninsula and multi-storey residential developments on brownfield sites. For these structures, we perform site-specific response analyses to evaluate liquefaction susceptibility, particularly within the loose, saturated silty sand lenses frequently encountered at depth. A critical field verification tool is the <a href="/sand-cone-density/">field density test</a>, which provides accurate in-situ density values for these granular layers, a key input for cyclic stress ratio calculations. The resulting seismic design parameters directly inform the selection and design of deep <a href="/foundations/">foundations</a>, ensuring they can withstand the kinematic and inertial forces induced by a seismic event without compromising structural integrity.</p>
+<img src="/img/tomografia-sismica-2.webp" alt="Seismic in Dundalk" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+
+<p>Our seismic service delivers a comprehensive interpretative report that moves beyond simple site classification to provide full design spectra and acceleration time histories tailored to the specific Dundalk site. The process begins with a desk study and field reconnaissance, progresses through a targeted ground investigation, and culminates in rigorous numerical modeling using software like DEEPSOIL. The final deliverable is a clear, actionable document containing ground type classification, liquefaction potential maps, and definitive design parameters for structural engineers. This integrated process ensures full compliance with Irish building regulations, de-risks your investment against a key geohazard, and provides the essential data for cost-optimized, seismically resilient foundation design.</p></div></section></main>
     </div>
 </div>
 

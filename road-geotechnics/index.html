@@ -22,6 +22,11 @@
 
 @media (max-width: 900px) {
     .sidebar { display: none; }
+    .content-area { flex-direction: column; }
+    .container { padding: 1rem; }
+    .header-top { flex-direction: column; text-align: center; }
+    main { padding: 1.5rem; }
+}
 /* FIX 2026-04-18: selectores sin 'nav' para coincidir con el HTML real generado */
 .sidebar { padding: .5rem 0; }
 summary::-webkit-details-marker { display: none; }
@@ -54,11 +59,11 @@ summary::before { content: '+ '; color: var(--primary); font-weight: 700; }
 
 .content-area { display: flex; gap: 1.5rem; align-items: flex-start; }
 .servicios-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
-    .content-area { flex-direction: column; }
+    
 .header-contact a { color: rgba(255,255,255,0.85); font-size: .9rem; }
 
 header { background: var(--dark); color: white; padding: 1.5rem 0 2rem; }
-    main { padding: 1.5rem; }
+    
 .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
 details p { padding: .75rem 1.25rem; font-size: .9rem; color: #475569; margin: 0; }
 th, td { padding: .85rem 1rem; text-align: left; border-bottom: 1px solid #e2e8f0; }
@@ -92,7 +97,7 @@ tr:nth-child(even) { background: #f8fafc; }
 main h3 { color: var(--dark); font-size: 1.05rem; margin: 1.5rem 0 .5rem; font-weight: 600; }
 .servicio h3 { margin: 0 0 .5rem; color: var(--dark); font-size: .95rem; }
 .servicio { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.25rem; transition: border-color .2s; }
-    .container { padding: 1rem; }
+    
 .sidebar .cat-toggle[aria-expanded="true"] .cat-arrow { transform: rotate(180deg); display: inline-block; }
 .header-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; gap: 1rem; flex-wrap: wrap; }
 .sidebar nav .home:hover { background: rgba(255,255,255,0.08); }
@@ -115,7 +120,7 @@ summary { padding: 1rem 1.25rem; cursor: pointer; font-weight: 500; color: var(-
 
 table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: .9rem; }
 .sidebar .cat-sub[hidden] { display: none; }
-    .header-top { flex-direction: column; text-align: center; }
+    
 main section { margin-bottom: 1.5rem; }
 details[open] summary::before { content: '− '; }
 .cta .whatsapp-sub { font-size: .85rem; opacity: .85; margin-bottom: 1rem; }
@@ -129,7 +134,9 @@ footer a { color: rgba(255,255,255,0.85); }
     background: rgba(0,0,0,0.15); display: flex; flex-direction: column;
 }
 /* Pattern moderno cat-name + cat-toggle (REGLA 30b) */
-.sidebar .cat-item { border-top: 1px solid rgba(255,255,255,0.04); }</style>
+.sidebar .cat-item { border-top: 1px solid rgba(255,255,255,0.04); }
+
+</style>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"description":"Dundalk’s roadway projects demand a thorough understanding of local ground conditions, often shaped by glacial tills and soft cohesive deposits. This categ","isPartOf":{"url":"https://dundalk.geotechnical-engineering.co","@id":"https://dundalk.geotechnical-engineering.co/#website","@type":"WebSite"},"name":"Roadway in Dundalk – Ireland","inLanguage":"en","@type":"WebPage","@id":"https://dundalk.geotechnical-engineering.co/road-geotechnics/","url":"https://dundalk.geotechnical-engineering.co/road-geotechnics/"},{"itemListElement":[{"name":"Home","item":"https://dundalk.geotechnical-engineering.co/","@type":"ListItem","position":1},{"name":"Roadway","item":"https://dundalk.geotechnical-engineering.co/road-geotechnics/","@type":"ListItem","position":2}],"@type":"BreadcrumbList"},{"name":"Roadway","itemListElement":[{"name":"CBR study for road design","url":"https://dundalk.geotechnical-engineering.co/cbr-road/","@type":"ListItem","position":1},{"name":"Flexible pavement design","url":"https://dundalk.geotechnical-engineering.co/flexible-pavement/","@type":"ListItem","position":2},{"name":"Rigid pavement design","url":"https://dundalk.geotechnical-engineering.co/rigid-pavement/","@type":"ListItem","position":3}],"@type":"ItemList"}]}</script><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#1E3A8A"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"></head>
 <body>
 
@@ -198,7 +205,14 @@ footer a { color: rgba(255,255,255,0.85); }
             </section>
 
             
-<section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto"><h2 style="margin-bottom:1.5rem;font-weight:700">Available services</h2><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem"><a href="../cbr-road/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">CBR study for road design</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../flexible-pavement/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Flexible pavement design</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../rigid-pavement/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Rigid pavement design</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a></div></div></section></main>
+<section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto">
+<img src="/img/ensayo-proctor-5.webp" alt="Roadway in Dundalk" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+<p>Roadway projects in Dundalk demand a rigorous geotechnical framework to address the town’s varied subsurface conditions, which range from glacial tills and fluvioglacial sands to localized soft alluvial deposits along the Castletown River. A comprehensive ground <a href="/investigation/">investigation</a> is the essential first step, designed to characterise these strata in accordance with Irish Standard I.S. EN 1997-2 and the guidance provided by Transport Infrastructure Ireland (TII). This phase typically combines borehole drilling with dynamic probing to map the depth to bedrock and identify any compressible layers that could lead to differential settlement under traffic loading. The resulting interpretive model directly informs pavement design, cut-and-fill earthworks, and the structural requirements for any integrated bridge or culvert foundations.</p>
+<p>To derive the critical design parameters, we deploy a suite of in-situ and laboratory tests calibrated to Irish conditions. The <a href="/cpt-test/">Cone Penetration Test (CPT)</a> provides a near-continuous profile of tip resistance and sleeve friction, allowing for precise delineation of soft lenses and the estimation of undrained shear strength in cohesive soils without the disturbance of sampling. This is routinely supplemented by <a href="/lab-in-situ/">in-situ testing</a> such as the standard penetration test (SPT) in boreholes and, for granular capping and sub-base layers, a <a href="/sand-cone-density/">field density test (sand cone method)</a> to verify compaction compliance against the Specification for Road Works. In the laboratory, strength and compressibility are further defined through classification tests, including <a href="/atterberg-limits/">Atterberg limits</a> to assess the plasticity of fine-grained soils and a full <a href="/grain-size/">grain size analysis (sieve + hydrometer)</a> to establish the particle size distribution and frost susceptibility of the material.</p>
+<p>Typical Dundalk roadway projects present distinct geotechnical challenges that our methodology directly resolves. The construction of link roads on the town’s periphery often encounters transition zones where firm lodgement till abruptly changes to soft lacustrine clays, a condition requiring targeted ground improvement or preloading strategies. For heavy-duty pavements in industrial estates and logistics parks, we combine CPT data with laboratory consolidation tests to calculate settlement magnitudes and rates, ensuring the pavement structure meets the TII design life criteria. Smaller urban schemes, such as junction upgrades or cycle lane retrofitting, frequently require a rapid <a href="/investigation/">investigation</a> to assess the bearing capacity of existing road foundations and to design suitable pavement overlays that prevent reflective cracking.</p>
+<img src="/img/ensayo-spt-1.webp" alt="Roadway in Dundalk" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+
+<p>The process begins with a desk study of available geological mapping and utility records, followed by the execution of a bespoke ground investigation designed to target the specific structural loading and drainage requirements. Our deliverables include a factual report of all field and laboratory data, a geotechnical interpretative report containing characteristic ground parameters, and a detailed <a href="/foundations/">foundations</a> design recommendation for any ancillary structures. By integrating local geological knowledge with stringent adherence to Irish and European standards, we provide Dundalk’s consulting engineers and contractors with a reliable, single-source solution that de-risks earthworks and ensures the long-term performance and durability of the roadway asset.</p></div></section></main>
     </div>
 </div>
 
